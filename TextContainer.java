@@ -2,7 +2,7 @@ package hw.task2;
 
 import java.io.*;
 
-@SaveTo(s = "D:\\Java\\Курсы PROG\\PRO\\save.txt")
+@SaveTo(s = "D:\\Java\\PRO\\save.txt")
 public class TextContainer {
 
     private String text = "some text";
