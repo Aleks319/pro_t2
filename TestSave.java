@@ -12,9 +12,9 @@ public class TestSave {
 
         Method[]  m = cls.getMethods();
         try {
-            for (Method mt : m) {
-                if (cls.isAnnotationPresent(SaveTo.class)) {
-                    if (mt.isAnnotationPresent(Saver.class)) {
+            if (cls.isAnnotationPresent(SaveTo.class)) {
+               for (Method mt : m) {
+                  if (mt.isAnnotationPresent(Saver.class)) {
                         SaveTo an = cls.getAnnotation(SaveTo.class);
                         tc.save(tc.getText(), an.s());
                     }
